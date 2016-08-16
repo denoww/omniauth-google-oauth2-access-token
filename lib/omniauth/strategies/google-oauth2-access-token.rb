@@ -14,8 +14,7 @@ module OmniAuth
       option :client_options, {
         :site          => 'https://accounts.google.com',
         :authorize_url => '/o/oauth2/auth',
-        :token_url     => '/o/oauth2/token',
-        :ssl => { :version => "SSLv3" }
+        :token_url     => '/o/oauth2/token'
       }
 
       args [:client_id, :client_secret]
